@@ -1,0 +1,34 @@
+========================================
+SIMPLE SOLUTION
+========================================
+
+Your setup is correct. The problem is likely that Claude Desktop 
+isn't reading the config or doesn't support MCP.
+
+TRY THIS:
+
+1. Open Claude Desktop Settings
+2. Look for "Developer" or "MCP" section
+3. Check if "rhino" server is listed
+4. If you see an error, that's the problem
+
+IF THAT DOESN'T WORK:
+
+Use Cursor IDE instead - it definitely supports MCP:
+
+1. Install Cursor IDE
+2. Create file: %USERPROFILE%\.cursor\mcp.json
+3. Add this:
+{
+  "mcpServers": {
+    "rhino": {
+      "command": "C:/Users/aroncal/.conda/envs/rhino_mcp/python.exe",
+      "args": ["-m", "rhino_mcp.server"]
+    }
+  }
+}
+4. Restart Cursor
+5. It will work!
+
+========================================
+

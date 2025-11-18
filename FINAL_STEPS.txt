@@ -1,0 +1,31 @@
+========================================
+GET IT WORKING - FINAL STEPS
+========================================
+
+Everything is set up correctly! Just do these 3 things:
+
+1. START RHINO:
+   - Open Rhino 7
+   - Tools → Python Script → Run...
+   - Select: C:\Users\aroncal\Repos\rhino_mcpHKS\rhino_mcp\rhino_mcp_client.py
+   - You should see: "RhinoMCP script loaded. Server started automatically."
+   - KEEP RHINO OPEN
+
+2. RESTART CLAUDE DESKTOP:
+   - Close Claude Desktop completely (quit it)
+   - Wait 5 seconds
+   - Open Claude Desktop again
+   - WAIT 20 SECONDS (it needs time to connect)
+   - Start a new chat
+
+3. TEST IT:
+   - Type: "Get information about the current Rhino scene"
+   - If you see more than 3 buttons, IT'S WORKING!
+
+========================================
+THAT'S IT! No terminal needed.
+========================================
+
+If it still doesn't work, the problem is Claude Desktop not restarting.
+Make sure you QUIT it completely, not just close the window.
+
